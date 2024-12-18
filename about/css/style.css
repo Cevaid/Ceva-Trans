@@ -1,0 +1,247 @@
+/* Google Fonts */
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Variable Color */
+:root {
+    --primary: #184D77;
+    --secondary: #5dff29;
+    --tertiary: #186AE2;
+    --secondarytext: #656d72;
+    --linecolor: #d9d9d9;
+    --background: #fbfbfb;
+}
+
+/* Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+
+.custom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    align-items: center;
+}
+
+.custom-nav .navbar-brand img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: -5px;
+}
+
+.custom-nav .navbar-brand span {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.custom-nav .nav-link {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 3.5rem;
+}
+
+.custom-nav .navbar-nav a::after {
+    content: '';
+    display: block;
+    margin-top: -10px;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--secondary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.custom-nav .navbar-nav a:hover::after {
+    transform: scaleX(0.8);
+}
+
+/* About */
+.about {
+    padding-top: 50px;
+}
+
+.about .card {
+    background-color: var(--background);
+    border-style: none;
+}
+
+.about .card-title {
+    font-size: 5rem;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem auto;
+    color: var(--primary);
+}
+
+.about .card-title i {
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background: rgba(24, 77, 119, 0.1);
+    border-radius: 0.5rem;
+}
+
+.about .card h4 {
+    font-weight: 600;
+}
+
+.about .card-text span {
+    font-weight: 600;
+}
+
+.about .btn-card,
+.about-armada .btn-card {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.about .btn-card:hover,
+.about-armada .btn-card:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+/* About Armada */
+.about-armada {
+    padding-top: 50px;
+    background-color: white;
+}
+
+.about-armada .swiper-wrapper .armada-image {
+    margin-top: -8rem;
+    width: 50%;
+    height: 50%;
+}
+.about-armada .swiper-button-prev,
+.about-armada .swiper-button-next {
+    color: var(--primary);
+}
+
+.about-armada .swiper-wrapper h2 {
+    width: 30%;
+    font-weight: 600;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.about-armada .tittle-armada {
+    margin: 3rem auto;
+    font-weight: 600;
+}
+
+.about-armada .card {
+    background: #f7f7f7;
+    border-style: none;
+}
+
+.about-armada .card-title img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 50px; 
+    height: auto;
+}
+
+.about-armada .img-armada-class {
+    width: 100%;
+    height: auto;
+}
+
+.about-armada .img-armada-class img {
+    width: 100%;
+    height: 500px;
+    border-radius: 30px; 
+    object-fit: cover;
+}
+
+/* Tittles */
+.pre-tittle {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--secondarytext);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 0 auto;
+}
+
+.pre-tittle::before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: var(--linecolor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+.section-tittle {
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.section-tittle span {
+    color: var(--primary);
+}
+
+/* Footer */
+footer {
+    padding: 3rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+footer a {
+    color: var(--8);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+/* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+    
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}
